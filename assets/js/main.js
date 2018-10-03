@@ -2,11 +2,10 @@
         $('.drop-coins').click(function(){
             var hexup = [];
             var hexdown = [];
-            var lineCont = $('.line-container');
-            lineCont.hide();
-            lineCont.empty();
-            lineCont.append(renderHexagram());
-            lineCont.show(600);
+            $('.line-container').hide();
+            $('.line-container').empty();
+            $('.line-container').append(renderHexagram());
+            $('.line-container').show(600);
             $(".line-container .line").each(function(i) {
                 if(i > 2){
                     if($(this).attr("class") == "line data1"){
