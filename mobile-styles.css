@@ -1,0 +1,309 @@
+@media screen and (max-width: 1179px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
+
+  h1 {
+    font-size: 86.3px;
+  }
+
+  h3 {
+    font-size: 77px;
+  }
+
+  h4 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 48px;
+  }
+
+  figcaption {
+    padding-top: 14px;
+  }
+
+  .hidden-res {
+    display: none;
+  }
+
+  .delimiter {
+    margin: 160px auto 160px;
+    width: 86%;
+  }
+
+  .custom-container>.column {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .custom-container {
+    width: 86%;
+  }
+
+  .intro-gradient {
+    background-image: url(assets/mask_mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    height: 1365px;
+    padding-top: 40px;
+  }
+
+  .intro-gradient .custom-container>.column {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+
+  .intro-gradient .custom-container .logo {
+    width: 30%;
+    margin-top: 60px;
+  }
+
+  .intro-gradient .figure {
+    position: static;
+  }
+
+  .intro-gradient .figure img {
+    width: 100%;
+  }
+
+  .textbox {
+    width: 100%;
+  }
+
+  .textbox>p {
+    margin-top: 60px;
+  }
+
+  .specialities {
+    margin-top: 500px;
+  }
+
+  .specialities .custom-container .textbox {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .specialities .custom-container {
+    height: 1700px;
+  }
+
+  .specialities .custom-container>figure.column {
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .specialities .slick-slide img {
+    height: auto;
+    width: 100%;
+  }
+
+  .apps {
+    height: 4000px;
+    margin-top: 200px;
+  }
+
+  .apps-gradient {
+    background-image: url(assets/mask2.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    height: 2540px;
+  }
+
+  .apps-gradient ul {
+    margin-top: 130px;
+    height: 1180px;
+  }
+
+  .apps-gradient li {
+    height: 360px;
+    margin-bottom: 40px;
+  }
+
+  .apps-gradient ul .left {
+    width: 22%;
+  }
+
+  .apps-gradient ul .right {
+    width: 78%;
+    padding-top: 15px;
+  }
+
+  .apps-gradient ul .right p {
+    margin-top: 20px;
+  }
+
+  .apps-gradient ul .bullet {
+    font-size: 52px;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+  }
+
+  .apps-gradient ul .bullet span {
+    position: relative;
+    top: 10px;
+  }
+
+  .apps-gradient .textbox {
+    width: 86%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 280px;
+  }
+
+  .apps-gradient .textbox img {
+    order: 4;
+    left: -460px;
+    bottom: -103%;
+    width: 160%;
+  }
+
+  .designs {
+    height: 1500px;
+    margin-top: 240px;
+  }
+
+  .designs .custom-container>.column {
+    margin: 0;
+    width: 100%;
+  }
+
+  .designs .custom-container>.column.figure {
+    margin: 0;
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .designs .figure img {
+    display: block;
+    width: 94%;
+  }
+
+  .designs .figure video {
+    display: none;
+  }
+
+  .projects-gradient {
+    background-image: url(assets/mask_mobile-2.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    height: 1500px;
+    margin-top: 50px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-container .column.left {
+    width: 100%;
+  }
+
+  .contact-container button {
+    border-radius: 14px;
+    font-size: 48px;
+    padding: 50px 50px;
+    margin-top: 80px;
+  }
+
+  .contact-container .column.right {
+    width: 100%;
+    margin: 0;
+    margin-top: 110px;
+  }
+
+  .contact-container .column.right .left,
+  .contact-container .column.right .right {
+    font-size: 49px;
+  }
+
+  .contact-container .column.right .right {
+    float: right;
+  }
+
+  .projects .slick-slide img,
+  .projects .slick-slide a {
+    height: 784px;
+    width: 545px;
+    margin: 0;
+  }
+
+  .slick-initialized .slick-slide {
+    display: block;
+    width: 600px;
+  }
+
+  .projects .carousel-container {
+    height: 570px;
+    margin-top: 40px;
+  }
+
+  .projects .slide-carousel button.slick-arrow {
+    display: none !important;
+  }
+
+  .projects .slide-carousel .slick-list {
+    padding-left: 0 !important;
+  }
+
+  .projects-gradient p {
+    margin-top: 45px;
+  }
+
+  .contact-container ul li {
+    margin-bottom: 60px;
+  }
+
+  p.small {
+    font-size: 24px;
+  }
+
+}
+
+/* ----------- iPhone 4, 5, 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    font-weight: normal;
+  }
+
+  .intro-gradient {
+    background-image: url(assets/mask_mobileIOS.svg);
+  }
+
+  .apps-gradient {
+    background-image: url(assets/mask_fuchsiaIOS.svg);
+    height: 2740px;
+  }
+
+  .designs {
+    margin-top: 440px;
+  }
+
+  .projects-gradient {
+    background-image: url(assets/mask_mobileIOS-2.svg);
+  }
+
+
+  p.small {
+    font-size: 30px;
+  }
+
+}
