@@ -1,80 +1,205 @@
 <!DOCTYPE html>
 <html>
 
-<head lang="ru">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <title>Книга перемен</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js"></script>
+<head>
+	<title>Vuwave - Создам твой новый цифровой опыт</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="icon" type="image/png" href="/assets/favicon.png">
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link rel="stylesheet" type="text/css" href="mobile-styles.css" />
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css" />
 </head>
+
 <body>
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0_%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD" target="_blank">
-        <img src="assets/images/hex.png" width="30" height="30" alt="">
-        <span class="navbar-text">
-            Книга перемен
-        </span>
-      </a>
-    </nav>
-    <div class="container">
-        <div class="col-md-12">
-            <button type="button" class="btn btn-primary-outline btn-lg
-            btn-block my-3 drop-coins">
-                Получить ответ
-            </button>
-        </div>
-        <div class="row">
-            <div class="line-container mx-5 my-3 col-md-2 col-xs-2"></div>
-            <div class="card mx-auto my-3 col-md-8 col-sx-10">
-              <div class="card-body">
-                <h5 class="card-title">Задай вопрос книге перемен</h5>
-                <h6 class="card-subtitle mb-2 text-muted"></h6>
-                <p class="card-text">
-                    1. Отведи для гадания время, когда тебе никто и ничто не помешает.</br>
-                    2. Не спеши.</br>
-                    3. Добейcя спокойного, сосредоточенного состояния.</br>
-                    4. Поразмыслив над вопросом, сделай его простым и ясным.
-                </p>
-              </div>
-            </div>
-        </div>
-    </div>
-    <footer class="footer-copyright page-footer text-center py-3 col-md-12">© 2018 Copyright:
-        <a href="https://vk.com/vuwave" target="_blank">VuWave</a>
-    </footer>
+	<section class="intro">
+		<div class="intro-gradient">
+			<div class="custom-container">
+				<p class="logo"><span class="capital">v</span>uwave</p>
+				<div class="textbox column">
+					<h1>Создам твой новый цифровой опыт</h1>
+					<p>От Бомбических Лендингов до Сложнейших Веб-Приложений и Все Это с Большим Вниманием к Деталям.
+					</p>
+				</div>
+				<div class="column figure">
+					<img src="/assets/phone-5.png" />
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="specialities">
+		<div class="custom-container">
+			<h2 class="hidden-res">Чем я могу помочь твоему бизнесу?</h2>
+			<div class="textbox column">
+				<h3>Я знаю, чего хочет пользователь сайта</h3>
+				<p>Хорошо продуманный продукт начинается с изучения потребностей пользователей и создания концепции. Я
+					не буду начинать работу над сайтом, пока не проведу необходимое исследование, которое позволит мне
+					разработать индивидуальное решение, ориентированное на цели бизнеса и потребности пользователей.</p>
+			</div>
+			<figure class="column">
+				<div class="fade-carousel fig-container">
+					<div>
+						<img src="/assets/group-4.png" />
+						<figcaption>
+							<h4>Интерфэйс</h4>
+							<p class="small">Тестирую сайты на фокус-группах чтобы убедится что<br />на привильном пути
+							</p>
+						</figcaption>
+					</div>
+				</div>
+			</figure>
+		</div>
+	</section>
+	<section class="apps">
+		<div class="apps-gradient">
+			<div class="textbox">
+				<img src="/assets/group-733.png" />
+				<h3>Создаю элегантные <br>веб приложения<br>и сайты</h3>
+				<ul>
+					<ul>
+						<li>
+							<div class="column left">
+								<div class="bullet"><span>1</span></div>
+							</div>
+							<div class="column right">
+								<h4>Создам с нуля сайт или веб-приложение
+								</h4>
+								<p>с уникальным дизайном и любым функционалом.</p>
+							</div>
+						</li>
+						<li>
+							<div class="column left">
+								<div class="bullet"><span>2</span></div>
+							</div>
+							<div class="column right">
+								<h4>Использую адаптивный дизайн</h4>
+								<p>а это значит, что сайт будет идеально отображаться на
+									всех устройствах.</p>
+							</div>
+						</li>
+						<li>
+							<div class="column left">
+								<div class="bullet"><span>3</span></div>
+							</div>
+							<div class="column right">
+								<h4>Сервис оплаты</h4>
+								<p class="hidden-res"> для оплаты услуг и товаров через сайт.</p>
+							</div>
+						</li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<div class="delimiter"></div>
+	<section class="projects">
+		<div class="custom-container">
+			<div class="textbox">
+				<h3>Проекты</h3>
+				<p></p>
+			</div>
+		</div>
+		<div class="custom-container carousel-container">
+			<div class="offset">
+				<div class="slide-carousel">
+					<div>
+						<a href="#text-me">
+							<img src="/assets/carousel0.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="#text-me">
+							<img src="/assets/carousel1.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="#text-me">
+							<img src="/assets/carousel2.jpg" />
+						</a>
+					</div>
+					<div>
+						<a href="#text-me">
+							<img src="/assets/carousel3.jpg" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="projects-gradient">
+			<div class="contact-container custom-container">
+				<div class="column left">
+					<h3 id="text-me">Давай спишемся</h3>
+					<p>Буду рад услышать, чем я могу тебе помочь.</p>
+					<button>
+						<a class="typeform-share" href="https://vasilyii.typeform.com/to/g93zj1" data-mode="drawer_left"
+							target="_blank">Написать</a>
+					</button>
+				</div>
+				<div class="column right">
+					<ul class="left">
+						<li>Email</li>
+						<li>Телефон</li>
+						<li>Телега</li>
+					</ul>
+					<ul class="right">
+						<li><a href="mailto:vuwave@yandex.ru" target="_blank">vuwave@ya.ru</a></li>
+						<li><a href="tel:+79199444216" target="_blank">+7 919 944 42 16</a></li>
+						<li><a href="https://teleg.run/vuwave" target="_blank">@vuwave</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="lib/slick/slick.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			"use strict";
+
+			$('.fade-carousel').slick({
+				dots: false,
+				infinite: true,
+				arrows: false,
+				speed: 500,
+				autoplay: true,
+				fade: true,
+				cssEase: 'linear'
+			});
+
+			$('.slide-carousel').slick({
+				dots: false,
+				arrows: true,
+				centerMode: false,
+				infinite: false,
+				speed: 300,
+				autoplay: false,
+				variableWidth: true,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				responsive: [
+					{
+						breakpoint: 1180,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 600,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			});
+		})();
+
+		//Typeform script
+		(function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })();
+	</script>
 </body>
+
 </html>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter50451352 = new Ya.Metrika2({
-                    id:50451352,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/tag.js";
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks2");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/50451352" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
