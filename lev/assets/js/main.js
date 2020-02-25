@@ -7,9 +7,9 @@ const restartBtn = document.getElementById("restart-btn");
 const timerContainer = document.getElementById("timer");
 const scoreContainer = document.getElementById("score");
 
-const correctSound = new Audio("ding.wav");
-const incorrectSound = new Audio("wrong.wav");
-//const timesUpSound = new Audio("timesup.wav");
+const correctSound = new Audio("assets/snd/ding.wav");
+const incorrectSound = new Audio("assets/snd/wrong.wav");
+const timesUpSound = new Audio("timesup.wav");
 
 let currentScore = 0;
 let secs = 10;
@@ -29,24 +29,27 @@ const table2x2 = () => {
 
 let arrnums = table2x2();
 
+const a = () => generateNum(0, 12);
+const b = () => generateNum(0, 12);
+
 //Store numbers from current question
 let getNumsFromQuestion = [];
 
 
 //Timer function
-function interval()
-setInterval(() => {
-  secs--;
-  if (secs >= 0) {
-    secondsDisplay.textContent = `${secs}`;
-  } else {
-    clearInterval();
-    numContainer.innerHTML = `Вермя вышло!<br>Очки: ${currentScore}`;
-    numContainer.style.fontSize =
-      '2em';
-    numContainer.style.paddingTop = '40px';
-  }
-}, 1000);
+function interval() {
+  setInterval(() => {
+    secs--;
+    if (secs >= 0) {
+      secondsDisplay.textContent = `${secs}`;
+    } else {
+      clearInterval();
+      numContainer.innerHTML = `Вермя вышло!<br>Очки: ${currentScore}`;
+      numContainer.style.fontSize =
+        '2em';
+      numContainer.style.paddingTop = '40px';
+    }
+  }, 1000);
 }
 
 //Hide start button and display question
