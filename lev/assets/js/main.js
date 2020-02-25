@@ -19,8 +19,8 @@ const addPoint = () => (currentScore += 1);
 
 const table2x2 = () => {
   let arr = [];
-  for (i = 2; i <= 9; i++) {
-    for (j = 1; j <= 9; j++) {
+  for (i = 2; i <= 2; i++) {
+    for (j = 1; j <= 2; j++) {
       arr.push([i, j]);
     }
   }
@@ -63,7 +63,14 @@ startBtn.addEventListener("click", function () {
 //Display question using generated numbers 
 function displayQuestion() {
   let popnum = arrnums.pop();
-  console.log(popnum);
+  if (popnum === undefined) {
+    clearInterval();
+    secs = 99;
+    numContainer.innerHTML = `Игра окончена!<br>Ты набрал :<br> ${currentScore} из 72`;
+    numContainer.style.fontSize =
+      '2.2em';
+    numContainer.style.paddingTop = '40px';
+  }
   let num1 = popnum[0];
   let num2 = popnum[1];
   let nums = `${num1} x ${num2}`;
@@ -93,7 +100,9 @@ restartBtn.addEventListener("click", function () {
   secs = 10;
   secondsDisplay.textContent = `${secs}`;
   currentScore = 0;
-  scoreContainer.textContent = `Score: ${currentScore}`;
+  scoreContainer.textContent = `Очки: ${currentScore}`;
+  arrnums = [];
+  arrnums = table2x2();
   clearInterval();
   displayQuestion();
 });
@@ -102,11 +111,11 @@ restartBtn.addEventListener("click", function () {
 //Enter key event - Accept user input and empty imput value for next question
 input.addEventListener("keyup", function (e) {
   if (e.keyCode === 13) {
-    console.log(arrnums.length);
+    alert('asd');
     result();
     getNumsFromQuestion = []; //reset array
     input.value = '';
-    secs = 10;
+    secs = 11;
     if (secs < 1) {
       correctSound.pause();
       incorrectSound.pause();
