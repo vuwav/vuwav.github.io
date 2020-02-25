@@ -111,7 +111,6 @@ restartBtn.addEventListener("click", function () {
 //Enter key event - Accept user input and empty imput value for next question
 input.addEventListener("keyup", function (e) {
   if (e.keyCode === 13) {
-    alert('asd');
     result();
     getNumsFromQuestion = []; //reset array
     input.value = '';
