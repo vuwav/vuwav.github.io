@@ -19,8 +19,8 @@ const addPoint = () => (currentScore += 1);
 
 const table2x2 = () => {
   let arr = [];
-  for (i = 2; i <= 2; i++) {
-    for (j = 1; j <= 2; j++) {
+  for (i = 2; i <= 9; i++) {
+    for (j = 1; j <= 9; j++) {
       arr.push([i, j]);
     }
   }
