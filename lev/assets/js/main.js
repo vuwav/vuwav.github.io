@@ -1,4 +1,5 @@
 // DOM elements
+const heading = document.getElementById("heading");
 const numContainer = document.getElementById("num-display");
 const submitBtn = document.getElementById("enter-btn");
 const input = document.getElementById("answer-input");
@@ -9,7 +10,7 @@ const scoreContainer = document.getElementById("score");
 
 const correctSound = new Audio("assets/snd/ding.wav");
 const incorrectSound = new Audio("assets/snd/wrong.wav");
-const timesUpSound = new Audio("timesup.wav");
+const timesUpSound = new Audio("assets/snd/timesup.wav");
 
 let currentScore = 0;
 let secs = 10;
@@ -54,6 +55,7 @@ function interval() {
 
 //Hide start button and display question
 startBtn.addEventListener("click", function () {
+  heading.display = "none";
   scoreContainer.textContent = `Очки: ${currentScore}`;
   startBtn.display = "hidden";
   interval();
@@ -65,7 +67,7 @@ function displayQuestion() {
   let popnum = arrnums.pop();
   if (popnum === undefined) {
     clearInterval();
-    secs = 99;
+    secs = 199;
     numContainer.innerHTML = `Игра окончена!<br>Ты набрал :<br> ${currentScore} из 72`;
     numContainer.style.fontSize =
       '2.2em';
@@ -89,14 +91,19 @@ function result() {
     addPoint();
     scoreContainer.textContent = `Очки: ${currentScore}`;
   } else {
+    showAnswer(getNumsFromQuestion[0] * getNumsFromQuestion[1]);
     incorrectSound.play();
   }
+}
+
+function showAnswer(answer) {
+  numContainer.innerHTML = answer;
 }
 
 //Restart button event - Reset timer and score
 restartBtn.addEventListener("click", function () {
   numContainer.style.fontSize =
-    '3.5em';
+    '4.5em';
   secs = 10;
   secondsDisplay.textContent = `${secs}`;
   currentScore = 0;
