@@ -85,6 +85,9 @@ function displayQuestion() {
 
 //Assess user answer, play corresponding sound and update score
 function result() {
+  if (secs < 1) {
+    return;
+  }
   let userAnswer = document.getElementById("answer-input").value;
   if (
     parseInt(userAnswer) ===
