@@ -59,6 +59,7 @@ startBtn.addEventListener("click", function () {
   intro.style.display = "none";
   scoreContainer.textContent = `Очки: ${currentScore}`;
   startBtn.display = "hidden";
+  input.focus();
   interval();
   displayQuestion();
 });
@@ -107,6 +108,7 @@ restartBtn.addEventListener("click", function () {
   numContainer.style.fontSize =
     '4.5em';
   secs = 10;
+  input.focus();
   secondsDisplay.textContent = `${secs}`;
   currentScore = 0;
   scoreContainer.textContent = `Очки: ${currentScore}`;
