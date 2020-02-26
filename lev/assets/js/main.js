@@ -1,5 +1,5 @@
 // DOM elements
-const heading = document.getElementById("heading");
+const intro = document.getElementById("intro-p");
 const numContainer = document.getElementById("num-display");
 const submitBtn = document.getElementById("enter-btn");
 const input = document.getElementById("answer-input");
@@ -29,6 +29,7 @@ const table2x2 = () => {
 }
 
 let arrnums = table2x2();
+let errors = [];
 
 const a = () => generateNum(0, 12);
 const b = () => generateNum(0, 12);
@@ -55,7 +56,7 @@ function interval() {
 
 //Hide start button and display question
 startBtn.addEventListener("click", function () {
-  heading.display = "none";
+  intro.style.display = "none";
   scoreContainer.textContent = `Очки: ${currentScore}`;
   startBtn.display = "hidden";
   interval();
@@ -68,6 +69,7 @@ function displayQuestion() {
   if (popnum === undefined) {
     clearInterval();
     secs = 199;
+    console.log(errors);
     numContainer.innerHTML = `Игра окончена!<br>Ты набрал :<br> ${currentScore} из 72`;
     numContainer.style.fontSize =
       '2.2em';
@@ -91,7 +93,7 @@ function result() {
     addPoint();
     scoreContainer.textContent = `Очки: ${currentScore}`;
   } else {
-
+    errors.push([getNumsFromQuestion[0], getNumsFromQuestion[1]])
     incorrectSound.play();
   }
 }
@@ -127,6 +129,7 @@ input.addEventListener("keyup", function (e) {
       incorrectSound.pause();
       return;
     }
+    document.input.focus();
     return displayQuestion();
   }
 });
