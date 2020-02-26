@@ -91,7 +91,7 @@ function result() {
     addPoint();
     scoreContainer.textContent = `Очки: ${currentScore}`;
   } else {
-    showAnswer(getNumsFromQuestion[0] * getNumsFromQuestion[1]);
+
     incorrectSound.play();
   }
 }
