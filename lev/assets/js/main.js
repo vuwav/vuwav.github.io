@@ -123,13 +123,13 @@ input.addEventListener("keyup", function (e) {
     result();
     getNumsFromQuestion = []; //reset array
     input.value = '';
+    input.focus();
     secs = 11;
     if (secs < 1) {
       correctSound.pause();
       incorrectSound.pause();
       return;
     }
-    document.input.focus();
     return displayQuestion();
   }
 });
