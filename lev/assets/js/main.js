@@ -125,12 +125,12 @@ input.addEventListener("keyup", function (e) {
     result();
     getNumsFromQuestion = []; //reset array
     input.value = '';
-    secs = 11;
     if (secs < 1) {
       correctSound.pause();
       incorrectSound.pause();
       return;
     }
+    secs = 11;
     return displayQuestion();
   }
 });
@@ -141,11 +141,11 @@ submitBtn.addEventListener("click", function () {
   getNumsFromQuestion = []; //reset array
   input.value = '';
   input.focus();
-  secs = 11;
   if (secs < 1) {
     correctSound.pause();
     incorrectSound.pause();
     return;
   }
+  secs = 11;
   return displayQuestion();
 });
