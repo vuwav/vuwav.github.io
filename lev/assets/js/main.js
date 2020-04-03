@@ -115,6 +115,7 @@ restartBtn.addEventListener("click", function () {
   secondsDisplay.textContent = `${secs}`;
   currentScore = 0;
   scoreContainer.textContent = `Очки: ${currentScore}`;
+  getNumsFromQuestion = []; //reset array
   arrnums = [];
   arrnums = table2x2();
   clearInterval();
